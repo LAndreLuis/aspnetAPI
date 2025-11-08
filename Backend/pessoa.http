@@ -1,0 +1,33 @@
+@base_address = http://localhost:3000/api/pessoas
+
+POST  {{base_address}}
+Content-Type: application/json
+
+{
+    "nome": "rodrigo32",
+    "idade": 15,
+    "telefone": "123456789",
+    "email":"andre789@hotmail.com",
+    "nascimento":"08/01/1999"    
+}
+###
+GET   {{base_address}}
+
+###
+GET   {{base_address}}/8
+
+###
+DELETE   {{base_address}}/2
+
+###
+PUT   {{base_address}}/8
+Content-Type: application/json
+
+{
+    "id": 8,
+    "nome": "rodrigo1",
+    "idade": 15,
+    "telefone": "123456789",
+    "email":"andre789@hotmail.com",
+    "nascimento":"08/01/1999"  
+}
